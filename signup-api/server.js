@@ -1,25 +1,24 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const path = require('path');
 const compression = require('compression');
-app.use(compression());
 
-
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
+// Initialize app
 const app = express();
 const PORT = 4200;
 
 // Middleware
+app.use(compression());
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Serve React build files
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI || 'mongodb+srv://bonzshane2:0VHyaibpxLU2qPeH@onlineradio.gb9u1.mongodb.net/?retryWrites=true&w=majority&appName=OnlineRadio';
