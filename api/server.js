@@ -11,6 +11,15 @@ app.use(compression());
 app.use(cors());
 app.use(express.json());
 
+// Alternatively, allow specific origin(s)
+app.use(
+  cors({
+    origin: 'https://online-radio-fa3s4kwiw-johnbarros-projects.vercel.app/', // Replace with your frontend URL
+    methods: 'GET,POST,PUT,DELETE',
+    credentials: true, // Enable cookies if needed
+  })
+);
+
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
