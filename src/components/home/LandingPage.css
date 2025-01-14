@@ -58,7 +58,9 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #556FB5, #2E7D32);
+  background: linear-gradient(135deg, #556FB5, #2E7D32), url('../../assets/images/bg-image2.jpg');
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 6rem 2rem;
 }
