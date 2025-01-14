@@ -14,7 +14,7 @@ app.use(express.json());
 // Alternatively, allow specific origin(s)
 app.use(
   cors({
-    origin: 'https://online-radio-fa3s4kwiw-johnbarros-projects.vercel.app/', // Replace with your frontend URL
+    origin: 'https://online-radio-plum.vercel.app/', // Replace with your frontend URL
     methods: 'GET,POST,PUT,DELETE',
     credentials: true, // Enable cookies if needed
   })

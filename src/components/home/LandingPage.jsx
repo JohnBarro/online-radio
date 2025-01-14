@@ -74,7 +74,7 @@ const LandingPage = () => {
       </section>
 
       <footer className="footer">
-        <p>&copy; 2024 BrandName. All rights reserved.</p>
+        <p>&copy; 2025 StarMate Radio Online. All rights reserved.</p>
       </footer>
     </div>
   );

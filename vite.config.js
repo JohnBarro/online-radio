@@ -8,7 +8,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-    base: 'https://online-radio-l3ioftg6j-johnbarros-projects.vercel.app/'
+    base: 'https://online-radio-plum.vercel.app/'
   },
   build: {
     outDir: 'build', // Vercel serves the `build` directory
