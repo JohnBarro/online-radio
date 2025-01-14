@@ -11,6 +11,9 @@ export default defineConfig({
   },
   build: {
     outDir: 'build', // Vercel serves the `build` directory
+    rollupOptions: {
+      input: './src/main.jsx', // Ensure the correct input file
+    },
   },
   server: {
     port: 3000,
