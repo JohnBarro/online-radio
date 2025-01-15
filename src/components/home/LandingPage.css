@@ -1,15 +1,32 @@
-/* Modern LandingPage.css with Updated Colors */
-
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #556FB5, #2E7D32), url('../../assets/images/bg-image2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-image {
+  width: 200px; /* Set your desired width */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  margin-bottom: 20px;
 }
 
 .landing-page {
-  text-align: center;
+  background: url('/src/assets/images/bg-image2.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh; /* Ensure the background covers the full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -58,11 +75,14 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #556FB5, #2E7D32), url('../../assets/images/bg-image2.jpg');
-  background-size: cover;
-  background-position: center;
   color: white;
-  padding: 6rem 2rem;
+  padding: 2rem;
+  flex: 1; /* Makes the hero take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {

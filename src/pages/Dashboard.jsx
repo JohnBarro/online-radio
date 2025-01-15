@@ -5,7 +5,7 @@ import { CiLogout } from "react-icons/ci";
 import RadioPlayer from "./RadioPlayer";
 import LiveChat from "./LiveChat";
 import SongRequest from "./SongRequest";
-import background from "../assets/images/bg-image.jpg";
+import background from "../assets/images/bg-image2.jpg";
 
 const Settings = () => {
   return (
